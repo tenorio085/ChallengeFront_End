@@ -1,4 +1,13 @@
-import type { Integrante, Funcionalidade, Passo, Pilar, FAQItem } from '../types'
+import type {
+  Integrante,
+  Funcionalidade,
+  Passo,
+  Pilar,
+  ItemFAQ,
+  DadoEstatistica,
+  Depoimento,
+  OpcaoAssunto,
+} from '../types'
 
 export const integrantes: Integrante[] = [
   {
@@ -109,7 +118,7 @@ export const pilares: Pilar[] = [
   },
 ]
 
-export const faqItens: FAQItem[] = [
+export const itensFAQ: ItemFAQ[] = [
   {
     id: 1,
     pergunta: 'O que é o TreenUp?',
@@ -154,9 +163,74 @@ export const faqItens: FAQItem[] = [
   },
 ]
 
-export const opcoesAssunto = [
+export const opcoesAssunto: OpcaoAssunto[] = [
   { value: 'duvida', label: 'Dúvida' },
   { value: 'parceria', label: 'Parceria' },
   { value: 'empresa', label: 'Solução para Empresa' },
   { value: 'outro', label: 'Outro' },
+]
+
+export const estatisticas: DadoEstatistica[] = [
+  {
+    id: 1,
+    valor: 125,
+    sufixo: '+',
+    rotulo: 'Empresas Parceiras',
+    icone: '🏢',
+    cor: 'from-verde-claro to-verde-principal',
+  },
+  {
+    id: 2,
+    valor: 50000,
+    sufixo: '+',
+    rotulo: 'Colaboradores Engajados',
+    icone: '👥',
+    cor: 'from-teal-500 to-teal-destaque',
+  },
+  {
+    id: 3,
+    valor: 850,
+    sufixo: 't',
+    rotulo: 'CO₂ Reduzido',
+    icone: '🌱',
+    cor: 'from-amarelo-sol to-amber-600',
+  },
+  {
+    id: 4,
+    valor: 2,
+    sufixo: 'M',
+    rotulo: 'Treen-Tokens Gerados',
+    icone: '🪙',
+    cor: 'from-azul-ceu to-blue-700',
+  },
+]
+
+export const depoimentos: Depoimento[] = [
+  {
+    id: 1,
+    nome: 'Mariana Costa',
+    cargo: 'Gestora de RH, TechCorp',
+    texto:
+      'O engajamento da equipe decolou! Antes tínhamos 15% de participação nas ações verdes, agora estamos em 82%. O ranking semanal motiva todo mundo.',
+    avatar: '👩‍💼',
+    nota: 5,
+  },
+  {
+    id: 2,
+    nome: 'Carlos Ribeiro',
+    cargo: 'Analista de Sustentabilidade',
+    texto:
+      'Finalmente temos dados auditáveis de ESG. A integração com a SoulUp entrega relatórios reais de economia de KWh. Mudou completamente nosso relatório anual.',
+    avatar: '👨‍💻',
+    nota: 5,
+  },
+  {
+    id: 3,
+    nome: 'Juliana Martins',
+    cargo: 'Colaboradora, Nível 42',
+    texto:
+      'Abati R$ 120 na minha conta de luz só no último mês usando Treen-Tokens! Eu reciclo, vou aos Treen-Stops no parque, e minha Eco-Vila está linda. Viciada!',
+    avatar: '👩‍🎓',
+    nota: 5,
+  },
 ]

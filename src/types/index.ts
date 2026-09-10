@@ -25,15 +25,40 @@ export interface Pilar {
   descricao: string;
 }
 
-export interface FAQItem {
+export interface ItemFAQ {
   id: number;
   pergunta: string;
   resposta: string;
 }
 
-export interface FormularioContato {
+export interface DadosFormularioContato {
   nome: string;
   email: string;
   assunto: string;
   mensagem: string;
 }
+
+export interface DadoEstatistica {
+  id: number;
+  valor: number;
+  sufixo?: string;
+  rotulo: string;
+  icone: string;
+  cor: string;
+}
+
+export interface Depoimento {
+  id: number;
+  nome: string;
+  cargo: string;
+  texto: string;
+  avatar: string;
+  nota: number;
+}
+
+export interface OpcaoAssunto {
+  value: string;
+  label: string;
+}
+
+export type Tema = 'claro' | 'escuro';

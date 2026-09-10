@@ -16,5 +16,77 @@ body {
   font-family: 'Poppins', sans-serif;
   color: #212121;
   line-height: 1.6;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dark body {
+  color: #e0e0e0;
+  background-color: #0f172a;
+}
+
+.dark footer {
+  background-color: #020617 !important;
+}
+
+.dark .bg-white {
+  background-color: #1e293b !important;
+  color: #e0e0e0;
+}
+
+.dark .bg-gray-50 {
+  background-color: #1e293b !important;
+}
+
+.dark .text-gray-700,
+.dark .text-gray-600,
+.dark .text-gray-500,
+.dark .text-gray-800,
+.dark .text-gray-900 {
+  color: #cbd5e1 !important;
+}
+
+.opacidade-inicial {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.revelado {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
+
+.hero-padrao::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at top right, rgba(255, 255, 255, 0.15), transparent 50%);
+  pointer-events: none;
+}
+
+.cartao-3d {
+  transform-style: preserve-3d;
+  transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1),
+    box-shadow 0.4s ease;
+}
+.cartao-3d:hover {
+  transform: perspective(1000px) translateY(-6px) rotateX(4deg);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+.dark ::-webkit-scrollbar-track {
+  background: #0f172a;
+}
+::-webkit-scrollbar-thumb {
+  background: #4caf50;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #2e7d32;
 }
