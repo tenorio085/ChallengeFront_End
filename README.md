@@ -1,8 +1,5 @@
-# 🌳 TreenUp
-
-> Transformando sustentabilidade em uma jornada gamificada e recompensadora.
-
-## 📋 Descrição do Projeto
+# TreenUp
+## Descrição do Projeto
 
 O **TreenUp** é uma plataforma digital corporativa que conecta ações ecológicas reais a recompensas tangíveis através de gamificação. Resolvemos o problema da falta de engajamento contínuo de colaboradores em hábitos sustentáveis, transformando metas ESG em uma jornada interativa via Eco-World, Eco-Quest RPG e Treen-Stops de Realidade Aumentada.
 
@@ -10,7 +7,7 @@ O mercado corporativo enfrenta uma cobrança severa pela implementação de mét
 
 ---
 
-## 🛠️ Tecnologias Utilizadas
+## Tecnologias Utilizadas
 
 | Tecnologia | Versão | Descrição |
 |------------|--------|-----------|
@@ -25,7 +22,7 @@ O mercado corporativo enfrenta uma cobrança severa pela implementação de mét
 
 ---
 
-## 📁 Estrutura de Pastas do Projeto
+## Estrutura de Pastas do Projeto
 
 ```
 challenge_front/
@@ -74,7 +71,7 @@ challenge_front/
 
 ---
 
-## 🚀 Como Executar Localmente
+## Como Executar Localmente
 
 ### Pré-requisitos
 
@@ -115,29 +112,21 @@ npm run preview
 
 ## 🌐 Link do GitHub
 
-> **Repositório Oficial**: [Adicione aqui o link do seu repositório GitHub]
-
-Exemplo: `https://github.com/seu-usuario/treenup-sprint03`
+> **Repositório Oficial**: https://github.com/tenorio085/ChallengeFront_End.git
 
 ---
 
-## 🎥 Link do Vídeo no YouTube
+## Integrantes do Grupo
 
-> **Vídeo de apresentação**: [Adicione aqui o link do vídeo no YouTube]
-
----
-
-## 👥 Integrantes do Grupo
-
-| Foto | Nome Completo | RM | GitHub | LinkedIn |
-|------|---------------|----|--------|----------|
-| 👤 | **Thiago Motitsuki Tan** | 570760 | [ThiagoTan](https://github.com/ThiagoTan) | [LinkedIn](https://www.linkedin.com/in/thiago-tan) |
-| 👤 | **Arthur Netto Barbosa** | 569982 | [arthurnetto08](https://github.com/arthurnetto08) | [LinkedIn](https://www.linkedin.com/in/arthur-barbosa-8654353bb) |
-| 👤 | **Joao Pedro Rodrigues Siqueira** | 571316 | [JoaoSiqueira12](https://github.com/JoaoSiqueira12) | [LinkedIn](https://www.linkedin.com/in/joão-siqueira-25a055410) |
+|Nome Completo | RM | GitHub | LinkedIn |
+| **Thiago Motitsuki Tan** | 570760 | [ThiagoTan](https://github.com/ThiagoTan) | [LinkedIn](https://www.linkedin.com/in/thiago-tan) |
+| **Arthur Netto Barbosa** | 569982 | [arthurnetto08](https://github.com/arthurnetto08) | [LinkedIn](https://www.linkedin.com/in/arthur-barbosa-8654353bb) |
+| **Joao Pedro Rodrigues Siqueira** | 571316 | [JoaoSiqueira12](https://github.com/JoaoSiqueira12) | [LinkedIn](https://www.linkedin.com/in/joão-siqueira-25a055410) 
+| **Felipe Tenorio Diniz** | 568828 | [tenorio085](https://github.com/tenorio085) 
 
 ---
 
-## 📧 Contato
+## Contato
 
 Tem dúvidas ou quer saber mais sobre o TreenUp?
 - E-mail: `contato@treenup.com.br`
@@ -145,16 +134,15 @@ Tem dúvidas ou quer saber mais sobre o TreenUp?
 
 ---
 
-## 📱 Imagens e Ícones do Projeto
+## Imagens e Ícones do Projeto
 
 O projeto utiliza as seguintes mídias:
 - **Fotos do projeto** (pasta `src/assets/`): 3 imagens reais sobre sustentabilidade e ações ecológicas
-- **Ícones Emoji**: 🌳 🎮 🏆 📱 💡 🌍 usados como ícones das funcionalidades e decoração
 - **Favicon SVG**: Árvore estilizada representando a marca TreenUp
 
 ---
 
-## 📝 Páginas da Aplicação
+## Páginas da Aplicação
 
 | Rota | Página | Descrição |
 |------|--------|-----------|
