@@ -2,12 +2,12 @@
 
 O **TreenUp** é uma plataforma digital corporativa de gamificação sustentável (ESG) que conecta ações ecológicas reais a recompensas tangíveis. Este projeto faz parte da entrega da **Sprint 04** da FIAP.
 
-## 🔗 Links do Projeto
-- **Repositório GitHub**: [https://github.com/ThiagoTan/challenge_front](https://github.com/ThiagoTan/challenge_front)
+##  Links do Projeto
+- **Repositório GitHub**: [https://github.com/tenorio085/ChallengeFront_End](https://github.com/tenorio085/ChallengeFront_End)
 - **Deploy Vercel**: [https://challenge-front-treenup.vercel.app](https://challenge-front-treenup.vercel.app)
-- **Vídeo de Apresentação**: [https://www.youtube.com/watch?v=exemplo](https://www.youtube.com/watch?v=exemplo)
 
-## 🛠️ Tecnologias Utilizadas
+
+##  Tecnologias Utilizadas
 - **React + Vite + TypeScript**: Base da aplicação para alta performance e segurança de tipos.
 - **Tailwind CSS**: Estilização utility-first e responsividade completa.
 - **React Router DOM**: Navegação SPA com suporte a rotas estáticas e dinâmicas.
@@ -15,7 +15,7 @@ O **TreenUp** é uma plataforma digital corporativa de gamificação sustentáve
 - **Fetch API**: Integração nativa com o backend Java (sem bibliotecas externas).
 - **Context API**: Gerenciamento de estado global (Modo Escuro).
 
-## 📂 Estrutura de Pastas
+##  Estrutura de Pastas
 ```text
 src/
 ├── assets/         # Imagens e recursos estáticos
@@ -29,13 +29,13 @@ src/
 └── App.tsx         # Configuração de rotas e layout
 ```
 
-## 👥 Autores e Créditos (Equipe 1TDSPI)
-- **Thiago Motitsuki Tan** (RM 570760)
-- **Arthur Netto Barbosa** (RM 569982)
-- **Joao Pedro Rodrigues Siqueira** (RM 571316)
-- **Felipe Tenorio Diniz** (RM 568828)
+##  Autores e Créditos (Equipe 1TDSPI)
+- Thiago Motitsuki Tan** (RM 570760)
+- Arthur Netto Barbosa** (RM 569982)
+- Joao Pedro Rodrigues Siqueira** (RM 571316)
+- Felipe Tenorio Diniz** (RM 568828)
 
-## 🚀 Como Usar
+##  Como Usar
 
 ### Pré-requisitos
 - Node.js instalado (v18 ou superior).
