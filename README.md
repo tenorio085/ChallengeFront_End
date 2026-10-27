@@ -6,6 +6,7 @@ O **TreenUp** é uma plataforma digital corporativa de gamificação sustentáve
 - **Repositório GitHub**: [https://github.com/tenorio085/ChallengeFront_End](https://github.com/tenorio085/ChallengeFront_End)
 - **Deploy Vercel**: [https://challenge-front-treenup.vercel.app](https://challenge-front-treenup.vercel.app)
 - **Render**: [https://sprint4-java-e7d9.onrender.com](https://sprint4-java-e7d9.onrender.com)
+- **Dominio**: [challenge-front-end-rust.vercel.app](challenge-front-end-rust.vercel.app)
 
 
 ##  Tecnologias Utilizadas
