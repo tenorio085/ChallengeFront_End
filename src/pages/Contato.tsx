@@ -6,6 +6,7 @@ import SecaoCabecalho from '../components/SecaoCabecalho'
 import CartaoRevelavel from '../components/CartaoRevelavel'
 import { opcoesAssunto } from '../data'
 import type { DadosFormularioContato } from '../types'
+import { api } from '../services/api'
 
 const esquemaFormulario = z.object({
   nome: z
@@ -34,6 +35,7 @@ const CHAVE_ARMAZENAMENTO = 'treenup_form_contato'
 export default function Contato() {
   const [enviado, setEnviado] = useState(false)
   const [enviando, setEnviando] = useState(false)
+  const [erroApi, setErroApi] = useState('')
 
   const {
     register,
@@ -74,13 +76,18 @@ export default function Contato() {
     }
   }, [valoresAssistidos, isValid, enviado])
 
-  function aoSubmeter(_: DadosForm) {
+  async function aoSubmeter(dados: DadosForm) {
     setEnviando(true)
-    setTimeout(() => {
+    setErroApi('')
+    try {
+      await api.enviarContato(dados)
       setEnviando(false)
       setEnviado(true)
       localStorage.removeItem(CHAVE_ARMAZENAMENTO)
-    }, 1600)
+    } catch (e) {
+      setEnviando(false)
+      setErroApi(e instanceof Error ? e.message : 'Erro ao enviar mensagem. Tente novamente.')
+    }
   }
 
   function exibirErro(campo: keyof DadosForm) {
@@ -159,6 +166,13 @@ export default function Contato() {
                 <h2 className="text-2xl md:text-3xl mb-8 text-verde-principal font-extrabold">
                   Envie uma Mensagem
                 </h2>
+
+                {erroApi && (
+                  <div className="mb-6 rounded-xl border border-red-300 bg-red-50 p-4 text-red-800 animate-fade-in-baixo">
+                    <p className="font-bold">Não foi possível enviar a mensagem:</p>
+                    <p className="text-sm">{erroApi}</p>
+                  </div>
+                )}
 
                 {enviado ? (
                   <div className="animate-fade-in-baixo">

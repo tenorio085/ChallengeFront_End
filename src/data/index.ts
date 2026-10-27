@@ -9,6 +9,11 @@ import type {
   OpcaoAssunto,
 } from '../types'
 
+import fotoJapa from '../assets/japa.jpeg'
+import fotoPantera from '../assets/pantera.jpeg'
+import fotoJota from '../assets/jota.jpeg'
+import fotoTenorio from '../assets/tenorio.jpeg'
+
 export const integrantes: Integrante[] = [
   {
     id: 1,
@@ -16,6 +21,8 @@ export const integrantes: Integrante[] = [
     rm: '570760',
     github: 'https://github.com/ThiagoTan',
     linkedin: 'https://www.linkedin.com/in/thiago-tan',
+    foto: fotoJapa,
+    turma: '1TDSPI',
   },
   {
     id: 2,
@@ -23,6 +30,8 @@ export const integrantes: Integrante[] = [
     rm: '569982',
     github: 'https://github.com/arthurnetto08',
     linkedin: 'https://www.linkedin.com/in/arthur-barbosa-8654353bb',
+    foto: fotoPantera,
+    turma: '1TDSPI',
   },
   {
     id: 3,
@@ -30,6 +39,17 @@ export const integrantes: Integrante[] = [
     rm: '571316',
     github: 'https://github.com/JoaoSiqueira12',
     linkedin: 'https://www.linkedin.com/in/joão-siqueira-25a055410',
+    foto: fotoJota,
+    turma: '1TDSPI',
+  },
+  {
+    id: 4,
+    nome: 'Felipe Tenorio Diniz',
+    rm: '568828',
+    github: 'https://github.com/tenorio085',
+    linkedin: '#',
+    foto: fotoTenorio,
+    turma: '1TDSPI',
   },
 ]
 

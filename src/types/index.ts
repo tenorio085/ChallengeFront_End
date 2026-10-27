@@ -4,6 +4,8 @@ export interface Integrante {
   rm: string;
   github: string;
   linkedin: string;
+  foto: string;
+  turma: string;
 }
 
 export interface Funcionalidade {

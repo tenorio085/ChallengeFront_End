@@ -3,6 +3,8 @@ import { funcionalidades, passos } from '../data'
 import CartaoRevelavel from '../components/CartaoRevelavel'
 import SecaoEstatisticas from '../components/SecaoEstatisticas'
 import SecaoDepoimentos from '../components/SecaoDepoimentos'
+import CartaoFuncionalidade from '../components/CartaoFuncionalidade'
+import Badge from '../components/Badge'
 import imagem1 from '../assets/imagem1.jpg'
 import imagem2 from '../assets/imagem2.jpg'
 import imagem3 from '../assets/imagem3.jpg'
@@ -23,9 +25,9 @@ export default function Home() {
         />
         <div className="container mx-auto max-w-7xl px-5 grid gap-16 items-center md:grid-cols-2 text-center md:text-left relative z-10">
           <CartaoRevelavel direcao="esquerda">
-            <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-sm font-semibold bg-white/15 backdrop-blur-sm border border-white/20 mb-6 animate-pulso-suave">
-              🌱 Gamificação + ESG + Recompensas reais
-            </span>
+            <Badge variante="branco" icone="🌱" classNameExtra="mb-6">
+              Gamificação + ESG + Recompensas reais
+            </Badge>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-black leading-tight mb-5 tracking-tight">
               Transformando{' '}
               <span className="bg-gradient-to-r from-amarelo-sol to-amber-300 bg-clip-text text-transparent">
@@ -89,45 +91,45 @@ export default function Home() {
 
       <SecaoEstatisticas />
 
-      <section className="py-20 bg-gray-50 dark:bg-slate-800/40">
+      <section className="py-20 bg-gray-50 dark:bg-slate-800/40 transition-colors">
         <div className="container mx-auto max-w-7xl px-5">
-          <CartaoRevelavel>
-            <h2 className="text-3xl md:text-4xl text-center mb-2.5 font-extrabold tracking-tight">
-              Nossas Funcionalidades
-            </h2>
-            <p className="text-center text-gray-500 dark:text-gray-400 mb-12 text-lg">
-              Uma plataforma completa para engajamento sustentável
-            </p>
+          <CartaoRevelavel direcao="cima">
+            <div className="text-center mb-12 flex flex-col items-center gap-4">
+              <Badge variante="claro" icone="⚡">
+                {funcionalidades.length} funcionalidades principais
+              </Badge>
+              <h2 className="text-3xl md:text-4xl font-extrabold tracking-tight">
+                Nossas Funcionalidades
+              </h2>
+              <p className="text-gray-500 dark:text-gray-400 text-lg max-w-2xl">
+                Uma plataforma completa para engajamento sustentável
+              </p>
+            </div>
           </CartaoRevelavel>
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
             {funcionalidades.map((func, i) => (
               <CartaoRevelavel key={func.id} direcao="baixo" atrasoMs={i * 100}>
-                <div className="h-full bg-white dark:bg-slate-800 p-8 rounded-2xl text-center shadow-md hover:shadow-2xl transition-all duration-300 border border-gray-100 dark:border-slate-700 group cartao-3d">
-                  <div className="text-5xl mb-5 inline-block transition-transform duration-500 group-hover:scale-125 group-hover:rotate-6">
-                    {func.icone}
-                  </div>
-                  <h3 className="text-xl mb-4 text-verde-principal font-bold">
-                    {func.titulo}
-                  </h3>
-                  <p className="text-gray-700 dark:text-gray-300 leading-7">
-                    {func.descricao}
-                  </p>
-                </div>
+                <CartaoFuncionalidade funcionalidade={func} />
               </CartaoRevelavel>
             ))}
           </div>
         </div>
       </section>
 
-      <section className="py-20">
+      <section className="py-20 bg-white dark:bg-cinza-fundo-escuro transition-colors">
         <div className="container mx-auto max-w-7xl px-5">
-          <CartaoRevelavel>
-            <h2 className="text-3xl md:text-4xl text-center mb-2.5 font-extrabold tracking-tight">
-              Nossa Jornada em Imagens 📸
-            </h2>
-            <p className="text-center text-gray-500 dark:text-gray-400 mb-12 text-lg">
-              Conheça um pouco mais sobre o TreenUp através de nossas imagens
-            </p>
+          <CartaoRevelavel direcao="cima">
+            <div className="text-center mb-12 flex flex-col items-center gap-4">
+              <Badge variante="verde" icone="📸">
+                Galeria exclusiva
+              </Badge>
+              <h2 className="text-3xl md:text-4xl font-extrabold tracking-tight">
+                Nossa Jornada em Imagens
+              </h2>
+              <p className="text-gray-500 dark:text-gray-400 text-lg">
+                Conheça um pouco mais sobre o TreenUp através de nossas imagens
+              </p>
+            </div>
           </CartaoRevelavel>
           <div className="grid gap-8 md:grid-cols-3 mt-10">
             {galeriaImagens.map((imagem, index) => (
@@ -155,12 +157,17 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="py-20 bg-gray-50 dark:bg-slate-800/40">
+      <section className="py-20 bg-gray-50 dark:bg-slate-800/40 transition-colors">
         <div className="container mx-auto max-w-7xl px-5">
-          <CartaoRevelavel>
-            <h2 className="text-3xl md:text-4xl text-center mb-12 font-extrabold tracking-tight">
-              Como Funciona
-            </h2>
+          <CartaoRevelavel direcao="cima">
+            <div className="text-center mb-12 flex flex-col items-center gap-4">
+              <Badge variante="amarelo" icone="📍">
+                {passos.length} passos simples
+              </Badge>
+              <h2 className="text-3xl md:text-4xl font-extrabold tracking-tight">
+                Como Funciona
+              </h2>
+            </div>
           </CartaoRevelavel>
           <div className="flex flex-col gap-10 max-w-4xl mx-auto">
             {passos.map((passo, i) => (
@@ -174,7 +181,9 @@ export default function Home() {
                     {passo.numero}
                   </div>
                   <div className="flex-1 w-full">
-                    <h3 className="text-xl mb-2.5 font-bold">{passo.titulo}</h3>
+                    <h3 className="text-xl mb-2.5 font-bold text-gray-900 dark:text-white">
+                      {passo.titulo}
+                    </h3>
                     <p className="text-gray-700 dark:text-gray-300 leading-7">
                       {passo.descricao}
                     </p>
@@ -198,7 +207,7 @@ export default function Home() {
           }}
         />
         <div className="container mx-auto max-w-7xl px-5 text-center relative z-10">
-          <CartaoRevelavel>
+          <CartaoRevelavel direcao="cima">
             <div className="text-7xl mb-4 inline-block animate-balanco origin-bottom">🌍</div>
             <h2 className="text-3xl md:text-5xl mb-4 font-black tracking-tight">
               Pronto para começar sua jornada sustentável?
